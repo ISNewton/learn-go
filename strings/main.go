@@ -16,12 +16,14 @@ func getMyNumber(theNumber int, secondN int) (int, int, error) {
 
 func main() {
 
-	var n1, n2, err = getMyNumber(1, 1)
+	var n1, n2, err = getMyNumber(4, 1)
 
 	if err != nil {
 		fmt.Println(err.Error())
 		return
+	} else {
+
+		fmt.Println(n1, n2)
 	}
 
-	fmt.Println(n1, n2)
 }
